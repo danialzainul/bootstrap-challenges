@@ -2,5 +2,13 @@
 
 ### `01-bootstrap-components`
 
+A challenge to get you familiar with Bootstrap CSS classes:
+
+- utilities classes (`.text-center`, `.list-inline`, etc..)
+- basic CSS classes (`.btn-primary`, `.form-inline`, etc..)
+- UI components (`.navbar`)
+
 
 ### `02-bootstrap-grid`
+
+A challenge to understand Bootstrap responsive grid system.
