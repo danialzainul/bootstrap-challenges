@@ -5,7 +5,7 @@ A challenge to understand Bootstrap responsive grid system.
 
 ## Specs
 
-Improve your page using Bootstrap grid. You will have to use the grid at 3 places in your page:
+Improve your page using Bootstrap grid to get [this final result](In this challenge, reproduce [this page](http://lewagon.github.io/bootstrap-challenges/02-bootstrap-grid/). You will have to use the grid at 3 places in your page:
 
 - In the banner, make the header, text and button to fill 50% of the screen.
 - In the section describing your service, use a nice responsive grid to position your 4 items.
