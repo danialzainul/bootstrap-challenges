@@ -31,7 +31,7 @@ var myOptions = {
   center: myLatlng,
   scrollwheel: false,
   mapTypeId: google.maps.MapTypeId.ROADMAP,
-  styles: [] // replace empty array picking a theme from https://snazzymaps.com/
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
 };
 
 var map = new google.maps.Map(document.getElementById('map'), myOptions);
