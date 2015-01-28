@@ -1,13 +1,14 @@
 ## Le Wagon Bootstrap challenge
 
-### `01-bootstrap-components`
+### `01-Pure-Bootstrap-grid`
+Practice the Bootstrap grid. Learn how to build various grids with different responsive behaviors.
 
-A challenge to get you familiar with Bootstrap CSS classes:
+### `02-Advanced-Bootstrap-grid`
+Now that you are Bootstrap-grid experts, learn more advanced but very usefull techniques with the grid.
 
-- utilities classes (`.text-center`, `.list-inline`, etc..)
-- basic CSS classes (`.btn-primary`, `.form-inline`, etc..)
-- UI components classes (`.navbar`, `.label`, `.alert`)
+### `03-Bootstrap-mockup-v1`
+A challenge to get you familiar with most common Bootstrap CSS classes.
 
-### `02-bootstrap-grid`
 
-A challenge to understand Bootstrap responsive grid system.
+### `04-Bootstrap-mockup-v2`
+A challenge to put all your Bootstrap skills together (components, grid) and build a nice mockup for your landing page.
