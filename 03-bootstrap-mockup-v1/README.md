@@ -10,8 +10,6 @@ A challenge to get you familiar with Bootstrap CSS classes:
 In this challenge, reproduce [this page](http://lewagon.github.io/bootstrap-challenges/03-bootstrap-mockup-v1/) by using Bootstrap classes as much as possible. Every time you need to style something, look in the Bootstrap documentation if there is a class for that. Here are some instructions to help you in this challenge:
 
 1. For the banner, feature section and footer, you will have to write a bit of personal CSS. In fact, there is no Bootstrap class for image backgrounds, or for custom color backgrounds.
-1. The [Bootsrap navbar code](http://getbootstrap.com/components/#navbar-default) given in the official documentation is a bit too complicated and not very convenient (their brand is not an image but just a text..). Use [our own navbar code](https://github.com/lewagon/awesome-navbars/blob/master/templates/_navbar.html) which is much better!
-
 ## Tips & Resources
 
 - Start by building your graphical elements (SVG icons, background image) before coding. You can find nice background images on [thestocks](http://thestocks.im/)). For picking nice SVG icons, [NounProject](http://thenounproject.com/) and [IconMelon](http://iconmelon.com/) are good options. Don't hesitate to modify a bit the SVG icons with Sketch to add your own flavor.
