@@ -20,7 +20,7 @@
       <div class="banner-content">
         <h1>WELCOME HOME</h1>
         <p>Rent unique places to stay from local hosts in 190+ countries.</p>
-        <a class="btn btn-primary btn-lg">How it works</a>
+        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#how-it-works">How it works</a>
       </div>
     </div>
 
@@ -43,27 +43,24 @@
       <p>This is a Airbnb Home challenge @ LeWagon</p>
     </div>
 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
-    <script type="text/javascript">
-    var myLatlng = new google.maps.LatLng(48.852937,2.364178);
-
-    var myOptions = {
-      zoom: 16,
-      center: myLatlng,
-      scrollwheel: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-    };
-
-    var map = new google.maps.Map(document.getElementById('map'), myOptions);
-    var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title:"You are here!"
-    });
-    </script>
-
+    <!-- Modal -->
+    <div class="modal fade" id="how-it-works" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title text-center" id="myModalLabel">Like wouah!</h4>
+          </div>
+          <div class="modal-body">
+            <h4 class="text-center">You really don't know how Airbnb works?</h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
