@@ -4,7 +4,7 @@
 Practice the Bootstrap grid. Learn how to build various grids with different responsive behaviors.
 
 ### `02-Advanced-Bootstrap-grid`
-Now that you are Bootstrap-grid experts, learn two advanced but very usefull techniques using the grid.
+Now that you are Bootstrap-grid experts, learn two advanced but very useful techniques using the grid.
 
 ### `03-Bootstrap-mockup-v1`
 A challenge to get you familiar with most common Bootstrap CSS classes.

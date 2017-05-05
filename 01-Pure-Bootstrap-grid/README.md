@@ -20,7 +20,7 @@ And then you will add different `.col-??-??` depending on each behavior you want
 
 - When designing grids, always start writing your `.col` classes for the smallest resolution `xs`. Asking yourself which proportion you want for this resolution (full screen (`.col-xs-12`)? half screen (`.col-xs-6`)? 25%-screen (`.col-xs-3`)?. Then move on to the next size (`sm`) and repeat this introspection work. And so on and so on until you get to `lg`.
 
-- Notice that you are not obliged to write all the `xs/sm/md/lg` classes. If you forgot one, the immediate preceding class applies. For instance a `<div class="col-xs-12 col-md-6">` will be full-screen from mobile to laptop, and then half-screen from labtop to larger screens (desktop).
+- Notice that you are not obliged to write all the `xs/sm/md/lg` classes. If you forgot one, the immediate preceding class applies. For instance a `<div class="col-xs-12 col-md-6">` will be full-screen from mobile to laptop, and then half-screen from laptop to larger screens (desktop).
 
 - The 4th smiley grid is a bit tricky. You'll have to nest rows. Here is how you do this:
 
