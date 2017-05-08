@@ -61,3 +61,9 @@ img.resize {
 .credit p > a {
   color: #F4FAFF;
 }
+
+@media(max-width: 718px) {
+  .credit p {
+    line-height: 16px;
+  }
+}
