@@ -11,11 +11,16 @@ body {
   height: 700px;
 }
 
+/* Wrapper Common Styles */
+.wrapper-about,
+.wrapper-mail {
+  color: #535657;
+  padding: 100px 50px;
+}
+
 /* Wrapper About Styles */
 .wrapper-about {
   background-color: #8DC5C9;
-  color: #535657;
-  padding: 50px;
 }
 
 img.resize {
@@ -26,8 +31,6 @@ img.resize {
 /* Wrapper Mail Styles */
 .wrapper-mail {
   background-color: #DEE7E7;
-  color: #535657;
-  padding: 100px;
 }
 
 /* Footer Styles */
