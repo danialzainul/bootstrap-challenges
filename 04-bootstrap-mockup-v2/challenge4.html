@@ -37,22 +37,30 @@
   </div>
 
   <div class="wrapper-about">
-    <div class="container">
-      <h1>Our Aim</h1>
+    <div class="container text-center">
+      <h2>Our Aim</h2>
       <br>
       <div class="row">
-        <img class="resize" src="../shared/my-images/soccer-ball.svg" alt="">
-        <h3>The Love</h3>
-        <p>Love football? You'll fit right in!</p>
-        <img class="resize" src="../shared/my-images/soccer-court.svg" alt="">
-        <h3>The Place</h3>
-        <p>Fields, streets or courts, we play!</p>
-        <img class="resize" src="../shared/my-images/soccer-shoe.svg" alt="">
-        <h3>The Shoes</h3>
-        <p>Shoes don't matter, just kick the ball!</p>
-        <img class="resize" src="../shared/my-images/soccer-trophy.svg" alt="">
-        <h3>The Goal</h3>
-        <p>Win or Lose doesn't matter, as long we have fun!</p>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img class="resize" src="../shared/my-images/soccer-ball.svg" alt="">
+          <h3>The Love</h3>
+          <p>Love football? You'll fit right in!</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img class="resize" src="../shared/my-images/soccer-court.svg" alt="">
+          <h3>The Place</h3>
+          <p>Fields, streets or courts, we play!</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img class="resize" src="../shared/my-images/soccer-shoe.svg" alt="">
+          <h3>The Shoes</h3>
+          <p>Shoes don't matter, just kick the ball!</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <img class="resize" src="../shared/my-images/soccer-trophy.svg" alt="">
+          <h3>The Goal</h3>
+          <p>Win or Lose doesn't matter, as long we have fun!</p>
+        </div>
       </div>
     </div>
   </div>
@@ -78,6 +86,7 @@
       scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+      // Tried changing styles, but map does not show Emirates Stadium
     };
 
     var map = new google.maps.Map(document.getElementById('map'), myOptions);
