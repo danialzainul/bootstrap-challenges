@@ -6,7 +6,7 @@ body {
 #banner {
   background-image: url(../my-images/soccer-pitch.jpg);
   color: #F4FAFF;
-  padding: 20px;
+  padding: 150px 20px 20px 20px;
   background-size: cover;
   height: 700px;
 }
