@@ -1,0 +1,63 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Banner Styles */
+#banner {
+  background-image: url(../my-images/soccer-pitch.jpg);
+  color: #F4FAFF;
+  padding: 20px;
+  background-size: cover;
+  height: 700px;
+}
+
+/* Wrapper About Styles */
+.wrapper-about {
+  background-color: #8DC5C9;
+  color: #535657;
+  padding: 50px;
+}
+
+img.resize {
+  width: 70px;
+  height: 70px;
+}
+
+/* Wrapper Mail Styles */
+.wrapper-mail {
+  background-color: #DEE7E7;
+  color: #535657;
+  padding: 100px;
+}
+
+/* Footer Styles */
+#footer {
+  background-color: #4F646F;
+  color: #F4FAFF;
+  padding: 100px;
+}
+
+#footer li > a {
+  color: #F4FAFF;
+  font-size: 30px;
+  padding: 0 5px;
+  transition: color 0.5s ease;
+}
+
+#footer a:hover {
+  color: #8DC5C9;
+  text-decoration: none;
+}
+
+.credit {
+  color: #DEE7E7;
+  padding-top: 20px;
+}
+
+.credit p {
+  line-height: 10px;
+}
+
+.credit p > a {
+  color: #F4FAFF;
+}

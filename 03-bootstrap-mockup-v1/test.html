@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap Challenge 3</title>
+  <title>Stooges FC</title>
 
   <!-- Bootstrap & Other Stylesheets -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link rel="stylesheet" href="../shared/stylesheets/home.css">
+  <link rel="stylesheet" href="../shared/my-stylesheets/custom.css">
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
 
@@ -24,7 +24,80 @@
   <![endif]-->
 </head>
 <body>
-  <h1>Hello, world!</h1>
+  <div id="banner">
+    <h1><strong>Stooges Football Club</strong></h1>
+    <br>
+    <p>We are a group of friends playing together for the love of the game</p>
+    <br>
+    <a href="" class="btn btn-lg btn-success">Join us now!</a>
+  </div>
+
+  <div class="wrapper-about">
+    <div class="container">
+      <h1>Our Aim</h1>
+      <br>
+      <div class="row">
+        <img class="resize" src="../shared/my-images/soccer-ball.svg" alt="">
+        <h3>The Love</h3>
+        <p>Love football? You'll fit right in!</p>
+        <img class="resize" src="../shared/my-images/soccer-court.svg" alt="">
+        <h3>The Place</h3>
+        <p>Fields, streets or courts, we play!</p>
+        <img class="resize" src="../shared/my-images/soccer-shoe.svg" alt="">
+        <h3>The Shoes</h3>
+        <p>Shoes don't matter, just kick the ball!</p>
+        <img class="resize" src="../shared/my-images/soccer-trophy.svg" alt="">
+        <h3>The Goal</h3>
+        <p>Win or Lose doesn't matter, as long we have fun!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrapper-mail text-center">
+    <h3>Get the latest updates from us</h3>
+    <p>Get notified about our next game details</p>
+    <form class="form-inline">
+      <input type="email" placeholder="stooges@gmail.com" class="form-control">
+      <input type="submit" value="Subscribe" class="btn btn-success">
+    </form>
+  </div>
+
+  <div id="map" style="width: 100%; height: 450px;"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript">
+    var myLatlng = new google.maps.LatLng(51.5550,-0.1085);
+
+    var myOptions = {
+      zoom: 16,
+      center: myLatlng,
+      scrollwheel: false,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+    };
+
+    var map = new google.maps.Map(document.getElementById('map'), myOptions);
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+    });
+    </script>
+
+  <!-- End Google Map -->
+
+  <div id="footer">
+    <ul class="list-inline">
+      <li><a class="fa fa-facebook" href="https://www.facebook.com/stoogesfc" target="_blank"></a></li>
+      <li><a class="fa fa-twitter" href="https://www.twitter.com" target="_blank"></a></li>
+      <li><a class="fa fa-instagram" href="https://www.instagram.com/stoogesfc" target="_blank"></a></li>
+    </ul>
+    <div class="credit">
+      <p>Website made by <a href="https://www.github.com/danialzainul">Danial Zainul </a>for Stooges FC</p>
+      <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+      <p>Icons made by <a href="http://www.flaticon.com/authors/yannick" title="Yannick">Yannick</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    </div>
+  </div>
 
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
