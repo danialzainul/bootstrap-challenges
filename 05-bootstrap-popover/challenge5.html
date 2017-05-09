@@ -24,15 +24,19 @@
   <![endif]-->
 </head>
 <body>
+  <div class="text-center">
+    <h1>Bootstrap Popover Project</h1>
+  </div>
+
   <div class="track">
     <div class="container">
       <div class="row">
         <div class="col-xs-4 col-xs-offset-3">
-          <a href="#"><h3>Football unites us all</h3></a>
+          <a href="#"><h3>Click img to open, click img again to close</h3></a>
           <p class="text-muted">Posted 3 days ago</p>
         </div>
         <div class="col-xs-2">
-          <img class="img-circle" src="images/george.png" alt="">
+          <img class="img-circle" data-toggle="popover" title="Header" data-content="Some content" src="images/george.png" alt="">
         </div>
       </div>
     </div>
@@ -41,47 +45,54 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-4 col-xs-offset-3">
-          <a href="#"><h3>One game, One love</h3></a>
+          <a href="#"><h3>Click img to open, click anywhere else to close</h3></a>
           <p class="text-muted">Posted 5 days ago</p>
         </div>
         <div class="col-xs-2">
-          <img class="img-circle" src="images/john.png" alt="">
+          <img class="img-circle" data-toggle="popover" tabindex="0" data-trigger="focus" title="Header" data-content="Some content" src="images/john.png" alt="">
+          <!-- data-trigger focus only works when using dummy a href="#" -->
+          <!-- therefore we need to add tabindex="0" -->
         </div>
       </div>
     </div>
   </div>
-  <hr>
   <div class="track">
     <div class="container">
       <div class="row">
         <div class="col-xs-4 col-xs-offset-3">
-          <a href="#"><h3>Win or lose, we are together</h3></a>
+          <a href="#"><h3>Popover location is at the bottom</h3></a>
           <p class="text-muted">Posted 7 days ago</p>
         </div>
         <div class="col-xs-2">
-          <img class="img-circle" src="images/paul.png" alt="">
+          <img class="img-circle" data-toggle="popover" data-trigger="hover" data-placement="bottom" title="Header" data-content="Some content" src="images/paul.png" alt="">
         </div>
       </div>
     </div>
   </div>
-  <hr>
   <div class="track">
     <div class="container">
       <div class="row">
         <div class="col-xs-4 col-xs-offset-3">
-          <a href="#"><h3>Champions train, Losers complain</h3></a>
+          <a href="#"><h3>Customized popover with CSS</h3></a>
           <p class="text-muted">Posted 10 days ago</p>
         </div>
         <div class="col-xs-2">
-          <img class="img-circle" src="images/ringo.png" alt="">
+          <img class="img-circle" data-toggle="popover" data-trigger="hover" title="Header" data-content="Some content" src="images/ringo.png" alt="">
         </div>
       </div>
     </div>
   </div>
-  <hr>
 
   <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Popover JS -->
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+  </script>
+
 </body>
 </html>

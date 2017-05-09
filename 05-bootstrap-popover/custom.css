@@ -2,7 +2,29 @@ body {
   font-family: Roboto;
 }
 
+.track {
+  padding: 20px;
+  border: 1px solid #33FF86;
+}
+
+.track:hover {
+  background-color: #E3F5EA;
+}
+
 .img-circle {
   width: 85px;
   height: 85px;
+}
+
+.popover {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border-color: #F32C22;
+  padding: 3px;
+}
+
+.popover-title {
+  color: #fff;
+  background-color: #F39F9B;
 }
